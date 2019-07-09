@@ -16,8 +16,7 @@ phases:
     commands:
       ## Integration test environment
       #- serverless deploy --stage test -v
-      - mkdir artifacts
-      - mkdir artifacts/stg
+      - mkdir -p artifacts/dev
       - serverless package --package artifacts/dev --stage dev -v
 
   post_build:

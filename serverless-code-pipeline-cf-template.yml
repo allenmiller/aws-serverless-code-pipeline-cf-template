@@ -87,8 +87,6 @@ Resources:
             - logs:FilterLogEvents
             - logs:DescribeLogStreams
             - logs:DeleteLogGroup
-            - s3:putObject
-            - s3:getObject
             - codebuild:*
             - 'cloudformation:List*'
             - 'cloudformation:Get*'

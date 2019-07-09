@@ -5,8 +5,8 @@ service: aws-serverless-express-application
 provider:
   name: aws
   runtime: nodejs8.10
-  stage: dev
-  region: us-west-1
+  stage: stg
+  region: us-east-1
 
 functions:
   app:

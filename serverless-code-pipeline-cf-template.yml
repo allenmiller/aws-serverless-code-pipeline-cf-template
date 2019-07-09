@@ -33,12 +33,12 @@ Parameters:
 
   GitHubRepository:
     Type: String
-    Default: getcft/aws-serverless-code-pipeline-cfn-template/master
+    Default: allenmiller/aws-serverless-code-pipeline-cf-template/master
     Description:  owner/repository/branch
 
   GitHubOAuthToken:
     Type: String
-    Default:  GitHub OAuthToken Here
+    NoEcho: True
     Description:  CodePipeline requires an OAuthToken
 
 Resources:

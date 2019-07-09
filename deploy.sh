@@ -8,6 +8,8 @@ npm install serverless-dynamodb-local serverless-offline serverless-stack-output
 
 echo "Deploying to $env"
 echo "_______________________________"
+
+export SLS_DEBUG=*
 env
 
 echo serverless deploy --stage $env --package $CODEBUILD_SRC_DIR/artifacts/$env -v

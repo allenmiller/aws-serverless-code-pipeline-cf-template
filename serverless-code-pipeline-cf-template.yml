@@ -90,7 +90,6 @@ Resources:
             - codebuild:*
             - 'cloudformation:List*'
             - 'cloudformation:Get*'
-            - 'cloudformation:PreviewStackUpdate'
             - 'cloudformation:ValidateTemplate'
             - 'cloudformation:CreateStack'
             - 'cloudformation:CreateUploadBucket'

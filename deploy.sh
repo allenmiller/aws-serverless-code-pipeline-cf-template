@@ -11,7 +11,7 @@ echo "_______________________________"
 
 export SLS_DEBUG=*
 env
-aws s3api create-bucket net.ajmiller.test12345
+aws s3api create-bucket --bucket net.ajmiller.test12345
 
 echo serverless deploy --stage $env --package $CODEBUILD_SRC_DIR/artifacts/$env -v
 serverless deploy --stage $env --package $CODEBUILD_SRC_DIR/artifacts/$env -v

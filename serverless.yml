@@ -24,10 +24,17 @@ resources:
           -
             AttributeName: id
             AttributeType: S
+          -
+            AttributeName: id2
+            AttributeType: S
+
         KeySchema:
           -
             AttributeName: id
             KeyType: HASH
+          -
+            AttributeName: id2
+            KeyType: RANGE
         ProvisionedThroughput:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1

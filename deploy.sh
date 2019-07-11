@@ -9,7 +9,7 @@ npm install serverless-dynamodb-local serverless-offline serverless-stack-output
 echo "Deploying to $env"
 echo "_______________________________"
 
-export SLS_DEBUG=*
+#export SLS_DEBUG=*
 env
 #aws s3api create-bucket --bucket net.ajmiller.test12345
 

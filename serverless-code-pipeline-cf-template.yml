@@ -111,6 +111,7 @@ Resources:
             - 'apigateway:PUT'
             - 'apigateway:DELETE'
             - 's3:CreateBucket'
+            - 's3:PutEncryptionConfiguration'
             - 's3:DeleteBucket'
             - 's3:ListBucket'
             - 's3:ListBucketVersions'
@@ -190,7 +191,7 @@ Resources:
               build:
                 commands:
                   - echo "executing deploy.sh"
-                  - . deploy.sh
+                  - . ./deploy.sh
       Environment:
         Type: "LINUX_CONTAINER"
         ComputeType: BUILD_GENERAL1_SMALL

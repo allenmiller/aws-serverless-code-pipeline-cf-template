@@ -190,7 +190,7 @@ Resources:
               build:
                 commands:
                   - echo "executing deploy.sh"
-                  - deploy.sh
+                  - . deploy.sh
       Environment:
         Type: "LINUX_CONTAINER"
         ComputeType: BUILD_GENERAL1_SMALL
